@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace KullaniciDLL
 {
     public class Admin : Kullanici

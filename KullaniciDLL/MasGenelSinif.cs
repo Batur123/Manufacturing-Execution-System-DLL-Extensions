@@ -6,17 +6,12 @@ namespace MasDLL
 {
     public class Rapor
     {
-       // int KeyID, AliciID, SiparisID;
-      //  DateTime BaslamaTarih, BitisTarih;
-       // string UrunKodu, UretimAdet, HurdaAdet, SiparisAdet, OperatorGrupAd, OperasyonTuru, DurusTuru, MakineAdi,NetAdet,AliciAD;
-       // float OrtalamaUretimMiktari, OrtalamaSiparisMiktari, OrtalamaHurdaMiktari, OrtalamaPerformans;
 
-        int makineid, operasyonid,en,alicisirketno,boy,siparisid,aliciid,keyid,planid,isemrino,isemriadet,urunid,miktar,uretimadet, hurdaadet, siparisadet;
+        int makineid, operasyonid,alicisirketno,siparisid,aliciid,keyid,planid,isemrino,isemriadet,urunid,miktar,uretimadet, hurdaadet, siparisadet;
         int durusid, uretimid;
         string makineadi, makinekodu, operasyonadi, urunadi, urunaciklama,aliciad,durusad,durusaciklama,urunkodu;
         DateTime istedigitarih, teslimtarihi,baslamatarihi,bitistarihi,durusbaslangictarih,durusbitistarih;
-
-
+        float en, boy;
 
         public int KeyID
         {
@@ -53,6 +48,41 @@ namespace MasDLL
             get { return urunkodu; }
             set { urunkodu = value; }
         }
+
+        public string UrunAciklama
+        {
+            get { return urunaciklama; }
+            set { urunaciklama = value; }
+        }
+
+        public string UrunAdi
+        {
+            get { return urunadi; }
+            set { urunadi = value; }
+        }
+
+        public int UrunID
+        {
+            get { return urunid; }
+            set { urunid = value; }
+        }
+
+
+        public float UrunEn
+        {
+            get { return en; }
+            set { en = value; }
+        }
+
+        public float UrunBoy
+        {
+            get { return boy; }
+            set { boy = value; }
+        }
+
+
+
+
 
         public int UretimAdet
         {
@@ -119,6 +149,37 @@ namespace MasDLL
             get { return alicisirketno; }
             set { alicisirketno = value; }
         }
+
+        public int DurusID
+        {
+            get { return durusid; }
+            set { durusid = value; }
+        }
+
+        public string DurusAd
+        {
+            get { return durusad; }
+            set { durusad = value; }
+        }
+
+        public string DurusAciklama
+        {
+            get { return durusaciklama; }
+            set { durusaciklama = value; }
+        }
+
+        public DateTime DurusBaslangicTarih
+        {
+            get { return durusbaslangictarih; }
+            set { durusbaslangictarih = value; }
+        }
+
+        public DateTime DurusBitisTarih
+        {
+            get { return durusbitistarih; }
+            set { durusbitistarih = value; }
+        }
+
 
 
     }
